@@ -1,0 +1,176 @@
+.flex-container {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.flex-container h1 {
+	display: flex;
+	justify-content: flex-end;
+	font-family: "Roboto" , sans-serif;
+	font-size: 3em;
+	font-weight: lighter;
+	color: #2d3c49;
+	margin: 5px;
+}
+
+.flex-container p {
+	display: flex;
+	justify-content: flex-end;
+	font-family: "Roboto" , sans-serif;
+	font-size: 1.3em;
+	font-weight: lighter;
+	color: #2d3c49;
+	margin: 5px;
+}
+
+.head-img {
+	display: flex;
+	align-items: flex-end;
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+
+}
+
+.head-img img {
+	display: flex;
+	width: 100%;
+	height: auto;
+
+}
+
+.hr {
+	border-top: 4px solid #7d97ad;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+.mid img {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 30px;
+
+}
+
+.feat_work {
+	font-family: "Roboto" , sans-serif;
+	display: block;
+	margin: 0;
+	padding-left: 10px;
+	text-align: left;
+	font-size: 2em;
+	font-weight:lighter;
+	color: #7d97ad;
+}
+
+.pictures {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.bin {
+	max-width: 420px;
+	flex-basis: 30%;
+}
+
+.bin img {
+	width: 100%;
+	height: auto;
+	border: 5px solid black;
+}
+
+.bin h3 {
+	text-align: center;
+	font-size: 25px;
+	font-weight: 300;
+	font-family: "Roboto" , sans-serif;
+	text-transform: uppercase;
+	margin-top: 10px;
+
+}
+
+.bin p {
+	text-align: center;
+	font-size: 17px;
+	font-family: "Roboto" , sans-serif;
+	font-weight: lighter;
+	margin-top: 5px;
+}
+
+.bin a {
+	text-decoration: none;
+	color: black;
+}
+
+footer {
+	margin-top: 40px;
+}
+/* media queries */
+
+@media screen and (max-width: 1140px) {
+	.bin {
+		transition: all 0.8s;
+		flex-basis: 35%;
+		margin: auto;
+	}
+	.bin:nth-child(3) {
+		margin:auto;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	.bin {
+		flex-basis: 51%;
+		margin: 30px 0px 30px 0px;
+		transition: all 0.8s;
+	}
+	.pictures {
+		justify-content: center;
+	}
+	.container h1 {
+		font-size: 2em;
+		transition: all 0.8s;
+	}
+	.container p {
+		font-size: 1em;
+		transition: all 0.8s;
+	}
+	.feat_work p {
+		text-align: center;
+		margin-bottom: 5px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.bin {
+		flex-basis: 61%;
+		margin: 30px 0px 30px 0px;
+		transition: all 0.8s;
+	}
+	.pictures {
+		justify-content: center;
+	}
+	.container h1 {
+		font-size: 2em;
+		transition: all 0.8s;
+	}
+	.container p {
+		font-size: 1em;
+		transition: all 0.8s;
+	}
+	.feat_work p {
+		text-align: center;
+		margin-bottom: 5px;
+		transition: all 0.8s;
+	}
+	.bin img {
+		height: 200px;
+	}
+
+}
